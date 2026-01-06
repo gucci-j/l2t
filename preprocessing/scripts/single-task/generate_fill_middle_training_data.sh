@@ -6,7 +6,7 @@ source $SCRATCH/envs/arr_2026_jan/bin/activate
 tokenizer_name_or_path="mistralai/Mistral-7B-Instruct-v0.3"
 ntp_tokenizer_name_or_path="mistralai/Mistral-7B-Instruct-v0.3"
 cache_dir="$SCRATCH/cache"
-output_dir="$SCRATCH/data/l2t_second_training_data"
+output_dir="$SCRATCH/data/l2t_fill_middle_training_data"
 seq_len=2048
 num_proc=$(( $(nproc) - 1 ))
 shard_index=$1

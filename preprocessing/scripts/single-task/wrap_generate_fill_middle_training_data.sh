@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=generate_second_training_data
+#SBATCH --job-name=generate_fill_middle_training_data
 #SBATCH --partition=your_partition_name
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:0
@@ -12,4 +12,4 @@ export shard_index
 
 apptainer exec --fakeroot --bind $SCRATCH:$SCRATCH \
     --rocm $SCRATCH/containers/pytorch_rocm6.3_ubuntu22.04_py3.10_pytorch_release_2.3.0.sif \
-    bash /path/to/l2t/repository/preprocessing/scripts/single-task/generate_second_training_data.sh $shard_index
+    bash /path/to/l2t/repository/preprocessing/scripts/single-task/generate_fill_middle_training_data.sh $shard_index

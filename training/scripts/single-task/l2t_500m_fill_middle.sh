@@ -6,9 +6,9 @@
 model_name_or_path="Qwen/Qwen2.5-7B-Instruct"
 tokenizer_name_or_path="mistralai/Mistral-7B-Instruct-v0.3"
 cache_dir="$SCRATCH/cache"
-log_dir=/path/to/l2t/repository/training/logs/l2t-500m-second
-output_dir="$SCRATCH/models/l2t-500m-second"
-dataset_dir="$SCRATCH/data/l2t_second_training_data"
+log_dir=/path/to/l2t/repository/training/logs/l2t-500m-fill_middle
+output_dir="$SCRATCH/models/l2t-500m-fill_middle"
+dataset_dir="$SCRATCH/data/l2t_fill_middle_training_data"
 
 
 export TRANSFORMERS_VERBOSITY=debug

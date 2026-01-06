@@ -166,9 +166,10 @@ Please use the following scripts to pre-process the data for ablation studies:
 | Single task (Token Type) | [script](./preprocessing/scripts/single-task/generate_token_type_training_data.sh) / [Slurm script](./preprocessing/scripts/single-task/wrap_generate_token_type_training_data.sh) | Pre-process data for the single task (Token Type) ablation study. Make sure to run this script with a shard index argument (0-5). |
 | Single task (Deletion) | [script](./preprocessing/scripts/single-task/generate_deletion_training_data.sh) / [Slurm script](./preprocessing/scripts/single-task/wrap_generate_deletion_training_data.sh) | Pre-process data for the single task (Deletion) ablation study. Make sure to run this script with a shard index argument (0-5). |
 | Single task (Reordering) | [script](./preprocessing/scripts/single-task/generate_reordering_training_data.sh) / [Slurm script](./preprocessing/scripts/single-task/wrap_generate_reordering_training_data.sh) | Pre-process data for the single task (Reordering) ablation study. Make sure to run this script with a shard index argument (0-5). |
+| Single task (Fill Middle) | [script](./preprocessing/scripts/single-task/generate_fill_middle_training_data.sh) / [Slurm script](./preprocessing/scripts/single-task/wrap_generate_fill_middle_training_data.sh) | Pre-process data for the single task (Fill Middle) ablation study. Make sure to run this script with a shard index argument (0-5). |
 | Single task (Half) | [script](./preprocessing/scripts/single-task/generate_half_training_data.sh) / [Slurm script](./preprocessing/scripts/single-task/wrap_generate_half_training_data.sh) | Pre-process data for the single task (Half) ablation study. Make sure to run this script with a shard index argument (0-5). |
 | Single task (One) | [script](./preprocessing/scripts/single-task/generate_one_training_data.sh) / [Slurm script](./preprocessing/scripts/single-task/wrap_generate_one_training_data.sh) | Pre-process data for the single task (One) ablation study. Make sure to run this script with a shard index argument (0-5). |
-| Single task (Second) | [script](./preprocessing/scripts/single-task/generate_second_training_data.sh) / [Slurm script](./preprocessing/scripts/single-task/wrap_generate_second_training_data.sh) | Pre-process data for the single task (Second) ablation study. Make sure to run this script with a shard index argument (0-5). |
+
 
 ## Pre-training
 
@@ -203,9 +204,9 @@ Please use the following scripts to pre-train the models for ablation studies:
 | Single task (Token Type) | 500M | [script](./training/scripts/single-task/l2t_500m_token_type.sh) / [Slurm script](./training/scripts/single-task/wrap_l2t_500m_token_type.sh) | Pre-train 500M L2T model for the single task (Token Type) ablation study. |
 | Single task (Deletion) | 500M | [script](./training/scripts/single-task/l2t_500m_deletion.sh) / [Slurm script](./training/scripts/single-task/wrap_l2t_500m_deletion.sh) | Pre-train 500M L2T model for the single task (Deletion) ablation study. |
 | Single task (Reordering) | 500M | [script](./training/scripts/single-task/l2t_500m_reordering.sh) / [Slurm script](./training/scripts/single-task/wrap_l2t_500m_reordering.sh) | Pre-train 500M L2T model for the single task (Reordering) ablation study. |
+| Single task (Fill Middle) | 500M | [script](./training/scripts/single-task/l2t_500m_fill_middle.sh) / [Slurm script](./training/scripts/single-task/wrap_l2t_500m_fill_middle.sh) | Pre-train 500M L2T model for the single task (Fill Middle) ablation study. |
 | Single task (Half) | 500M | [script](./training/scripts/single-task/l2t_500m_half.sh) / [Slurm script](./training/scripts/single-task/wrap_l2t_500m_half.sh) | Pre-train 500M L2T model for the single task (Half) ablation study. |
 | Single task (One) | 500M | [script](./training/scripts/single-task/l2t_500m_one.sh) / [Slurm script](./training/scripts/single-task/wrap_l2t_500m_one.sh) | Pre-train 500M L2T model for the single task (One) ablation study. |
-| Single task (Second) | 500M | [script](./training/scripts/single-task/l2t_500m_second.sh) / [Slurm script](./training/scripts/single-task/wrap_l2t_500m_second.sh) | Pre-train 500M L2T model for the single task (Second) ablation study. |
 
 
 ## Evaluation
@@ -225,7 +226,36 @@ Please use the following scripts to evaluate the models for different scenarios:
 
 
 ## Model Checkpoints
-TBA
+We released the pre-trained model checkpoints on Hugging Face. Below is the list of available models:
+
+| Model | Scenario | Scale | Hugging Face Link |
+|-------|----------|-------|-------------------|
+| L2T | Disjoint | 1B | [link](https://huggingface.co/l2t-project/l2t-1b-disjoint) |
+| L2T | Disjoint | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint) |
+| L2T | Shared | 1B | [link](https://huggingface.co/l2t-project/l2t-1b-shared) |
+| L2T | Shared | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-shared) |
+| Baseline (Raw) | Disjoint | 1B | [link](https://huggingface.co/l2t-project/raw-1b-disjoint) |
+| Baseline (Raw) | Disjoint | 500M | [link](https://huggingface.co/l2t-project/raw-500m-disjoint) |
+| Baseline (Raw) | Shared | 1B | [link](https://huggingface.co/l2t-project/raw-1b-shared) |
+| Baseline (Raw) | Shared | 500M | [link](https://huggingface.co/l2t-project/raw-500m-shared) |
+| Ablation: 100% L2T Data | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint-mix_0) |
+| Ablation: 75% L2T Data | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint-mix_25) |
+| Ablation: 25% L2T Data | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint-mix_75) |
+| Ablation: Single task (Char Count) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-char_count) |
+| Ablation: Single task (Masked Char) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-masked_char) |
+| Ablation: Single task (Space) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-space) |
+| Ablation: Single task (Typo) | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-typo) |
+| Ablation: Single task (Last) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-last) |
+| Ablation: Single task (Masked Word) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-masked_word) |
+| Ablation: Single task (Random) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-random) |
+| Ablation: Single task (Shuffle) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-shuffle) |
+| Ablation: Single task (Token Type) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-token_type) |
+| Ablation: Single task (Deletion) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-deletion) |
+| Ablation: Single task (Reordering) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-reordering) |
+| Ablation: Single task (Fill Middle) | 500M | | [link](https://huggingface.co/l2t-project/l2t-500m-fill_middle) |
+| Ablation: Single task (Half) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-half) |
+| Ablation: Single task (One) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-one) |
+
 
 ## Pre-training Datasets
 TBA
