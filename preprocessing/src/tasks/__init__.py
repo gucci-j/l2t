@@ -1,0 +1,1 @@
+from .controller import generate_instruction_data

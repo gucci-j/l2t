@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --job-name=eval_l2t
+#SBATCH --partition=your_partition_name
+#SBATCH --nodes=1
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=128GB
+#SBATCH --time=24:00:00
+
+apptainer exec \
+    --fakeroot \
+    --bind $SCRATCH:$SCRATCH \
+    --bind /etc/ssl/certs:/etc/ssl/certs \
+    --bind /etc/pki/ca-trust:/etc/pki/ca-trust \
+    --rocm $SCRATCH/containers/pytorch_rocm6.3_ubuntu22.04_py3.10_pytorch_release_2.3.0.sif \
+    bash /path/to/l2t/repository/evaluation/scripts/l2t.sh $1
