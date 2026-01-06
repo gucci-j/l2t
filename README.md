@@ -238,23 +238,23 @@ We released the pre-trained model checkpoints on Hugging Face. Below is the list
 | Baseline (Raw) | Disjoint | 500M | [link](https://huggingface.co/l2t-project/raw-500m-disjoint) |
 | Baseline (Raw) | Shared | 1B | [link](https://huggingface.co/l2t-project/raw-1b-shared) |
 | Baseline (Raw) | Shared | 500M | [link](https://huggingface.co/l2t-project/raw-500m-shared) |
-| Ablation: 100% L2T Data | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint-mix_0) |
-| Ablation: 75% L2T Data | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint-mix_25) |
-| Ablation: 25% L2T Data | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint-mix_75) |
-| Ablation: Single task (Char Count) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-char_count) |
-| Ablation: Single task (Masked Char) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-masked_char) |
-| Ablation: Single task (Space) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-space) |
+| Ablation: 100% L2T Data | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint-mix_0) |
+| Ablation: 75% L2T Data | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint-mix_25) |
+| Ablation: 25% L2T Data | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-disjoint-mix_75) |
+| Ablation: Single task (Char Count) | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-char_count) |
+| Ablation: Single task (Masked Char) | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-masked_char) |
+| Ablation: Single task (Space) | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-space) |
 | Ablation: Single task (Typo) | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-typo) |
-| Ablation: Single task (Last) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-last) |
-| Ablation: Single task (Masked Word) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-masked_word) |
-| Ablation: Single task (Random) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-random) |
-| Ablation: Single task (Shuffle) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-shuffle) |
-| Ablation: Single task (Token Type) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-token_type) |
-| Ablation: Single task (Deletion) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-deletion) |
-| Ablation: Single task (Reordering) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-reordering) |
-| Ablation: Single task (Fill Middle) | 500M | | [link](https://huggingface.co/l2t-project/l2t-500m-fill_middle) |
-| Ablation: Single task (Half) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-half) |
-| Ablation: Single task (One) | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-one) |
+| Ablation: Single task (Last)  | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-last) |
+| Ablation: Single task (Masked Word)  | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-masked_word) |
+| Ablation: Single task (Random)  | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-random) |
+| Ablation: Single task (Shuffle)  | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-shuffle) |
+| Ablation: Single task (Token Type)  | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-token_type) |
+| Ablation: Single task (Deletion)  | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-deletion) |
+| Ablation: Single task (Reordering)  | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-reordering) |
+| Ablation: Single task (Fill Middle)  | | 500M  | [link](https://huggingface.co/l2t-project/l2t-500m-fill_middle) |
+| Ablation: Single task (Half)  | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-half) |
+| Ablation: Single task (One)  | | 500M | [link](https://huggingface.co/l2t-project/l2t-500m-one) |
 
 
 ## Pre-training Datasets
