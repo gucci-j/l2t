@@ -11,7 +11,7 @@ This repository is an official implementation of the paper "Enhancing Linguistic
 > - `/path/to/l2t/repository`: Refers to the root directory of this repository.
 > - `your_partition_name`: Refers to the specific partition name of the computing cluster you are using. Please replace this placeholder with the actual partition name when submitting jobs.
 >
-> We assume the access to high-performance computing clusters with either AMD or NVIDIA GPUs with Singularity/Apptainer installed and SLURM as the job scheduler. Please adjust the instructions accordingly if you are using a different setup.
+> We assume access to high-performance computing clusters with either AMD or NVIDIA GPUs with Singularity/Apptainer installed and SLURM as the job scheduler. Please adjust the instructions accordingly if you are using a different setup.
 
 
 ## Installation
@@ -266,5 +266,15 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ## Citation
 If you find this work useful in your research, please consider citing the following paper:
 ```
-TBA
+@article{yamaguchi2026enhancinglinguisticcompetencelanguage,
+      title={Enhancing Linguistic Competence of Language Models through Pre-training with Language Learning Tasks}, 
+      author={Atsuki Yamaguchi and Maggie Mi and Nikolaos Aletras},
+      year={2026},
+      eprint={2601.03448},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2601.03448},
+      journal={arXiv},
+      volume={abs/2601.03448}
+}
 ```
