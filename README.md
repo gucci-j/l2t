@@ -1,7 +1,7 @@
 Enhancing Linguistic Competence of Language Models through Pre-training with Language Learning Tasks
 ===
 
-This repository is an official implementation of the paper "Enhancing Linguistic Competence of Language Models through Pre-training with Language Learning Tasks".
+This repository is an official implementation of the ACL 2026 (Main) paper "Enhancing Linguistic Competence of Language Models through Pre-training with Language Learning Tasks".
 
 ![L2T concept](./motivation.png)
 
@@ -210,7 +210,7 @@ Please use the following scripts to pre-train the models for ablation studies:
 
 
 ## Evaluation
-
+### Linguistic competence and General benchmark evaluations
 Please use the following scripts to evaluate the models for different scenarios:
 
 * L2T models: [script](./evaluation/scripts/l2t.sh) / [Slurm script](./evaluation/scripts/wrap_l2t.sh)
@@ -223,6 +223,32 @@ Please use the following scripts to evaluate the models for different scenarios:
 > sbatch /path/to/l2t/repository/evaluation/scripts/wrap_l2t.sh $SCRATCH/models/l2t-1b-disjoint
 > ```
 > The corresponding evaluation results will be saved in `/path/to/l2t/repository/evaluation/logs/l2t/` directory.
+
+### Psychometric evaluations
+The psychometric evaluation is based on the EMNLP 2024 paper: [Development of Cognitive Intelligence in Pre-trained Language Models](https://aclanthology.org/2024.emnlp-main.539/) by Raj Sanjay Shah, Khushi Bhardwaj, and Sashank Varma.
+
+If you use the psychometric evaluation scripts, please make sure to cite the following paper:  
+```
+@inproceedings{shah-etal-2024-development,
+    title = "Development of Cognitive Intelligence in Pre-trained Language Models",
+    author = "Shah, Raj Sanjay  and
+      Bhardwaj, Khushi  and
+      Varma, Sashank",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.539/",
+    doi = "10.18653/v1/2024.emnlp-main.539",
+    pages = "9632--9657",
+}
+```
+
+To streamline the evaluation process, we redesigned the original scripts and placed them in the [`evaluation/src/psychometric/`](./evaluation/src/psychometric/) directory. Please refer to the [README](./evaluation/src/psychometric/README.md) in that directory for detailed instructions on how to run the psychometric evaluations.
 
 
 ## Model Checkpoints
@@ -258,7 +284,10 @@ We released the pre-trained model checkpoints on Hugging Face. Below is the list
 
 
 ## Pre-training Datasets
-TBA
+While we have already uploaded the datasets to Hugging Face, we are facing storage limitations that prevent us from making them publicly accessible at this time (i.e., we are over the storage limit for our Hugging Face account and cannot make the datasets public until we resolve this issue).
+Unfortunately, as we do not plan to increase our storage limit in the near future (which requires a paid subscription), we are unable to provide public access to the datasets at this time.
+Nonetheless, as we provide the scripts for pre-processing the data, you can use those scripts to generate the datasets on your end.
+
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
