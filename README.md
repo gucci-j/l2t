@@ -295,15 +295,23 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ## Citation
 If you find this work useful in your research, please consider citing the following paper:
 ```
-@article{yamaguchi2026enhancinglinguisticcompetencelanguage,
-      title={Enhancing Linguistic Competence of Language Models through Pre-training with Language Learning Tasks}, 
-      author={Atsuki Yamaguchi and Maggie Mi and Nikolaos Aletras},
-      year={2026},
-      eprint={2601.03448},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2601.03448},
-      journal={arXiv},
-      volume={abs/2601.03448}
+@inproceedings{yamaguchi-etal-2026-enhancing,
+    title = "Enhancing Linguistic Competence of Language Models through Pre-training with Language Learning Tasks",
+    author = "Yamaguchi, Atsuki  and
+      Mi, Maggie  and
+      Aletras, Nikolaos",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-short.27/",
+    doi = "10.18653/v1/2026.acl-short.27",
+    pages = "316--336",
+    ISBN = "979-8-89176-391-3",
 }
 ```
